@@ -1,0 +1,41 @@
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.log
+
+# Virtual Environment
+.venv/
+env/
+venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python-specific files
+*.egg
+*.egg-info/
+dist/
+build/
+*.so
+
+# Vercel or Deployment
+.vercel/
+output/
+
+# Environment Variables
+.env
+
+# IDE and Editor settings
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Node.js (if any)
+node_modules/
+package-lock.json
+yarn.lock
