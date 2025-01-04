@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Output</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table 1</h1>
+    <table>
+        <tr>
+            <th>Index #</th>
+            <th>Value</th>
+        </tr>
+        {% for row in table1 %}
+        <tr>
+            <td>{{ row['Index #'] }}</td>
+            <td>{{ row['Value'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h1>Table 2</h1>
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>Alpha</td>
+            <td>{{ table2['Alpha'] }}</td>
+        </tr>
+        <tr>
+            <td>Beta</td>
+            <td>{{ table2['Beta'] }}</td>
+        </tr>
+        <tr>
+            <td>Charlie</td>
+            <td>{{ table2['Charlie'] }}</td>
+        </tr>
+    </table>
+</body>
+</html>
